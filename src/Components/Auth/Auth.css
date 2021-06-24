@@ -88,15 +88,20 @@ input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-#authBlock button {
+#authBlock button   {
   width: 100%;
   border-radius: 4px;
-  background: linear-gradient(263deg, #5909b3, #7f0dff);
-  color: #fff;
+  background: #7f0dff;
+  color: #ffffff;
   outline: none;
   border: none;
   margin: 10px 0;
   padding: 15px 0;
+  border-radius: 5px;
+}
+#authBlock button:hover{
+  background: linear-gradient(263deg, #cc25e2, #3ea3f7);
+
 }
 .register_Block {
   display: flex;
@@ -112,8 +117,25 @@ input:-webkit-autofill:focus {
   font-size: 13px;
   text-shadow: 1px 2px 2px #111;
 }
+.register_Block a:hover {
+  color: #3cd0fd;
+
+}
 .register_Block a:last-child {
   display: flex;
   justify-content: flex-end;
   margin: 10px 20px;
+}
+
+.phoneBtn {
+  color: #ffffff;
+  margin: 14px 0;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  background: #0574f6;
+  text-transform: capitalize;
+  border-radius: 50px;
 }

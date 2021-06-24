@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import firebase from "../../firebase";
 import { toast } from "react-toastify";
 import { withRouter } from "react-router-dom";
+
 const DropDownMenu = props => {
     let toggleRef = useRef();
     console.log(props);
@@ -49,6 +50,9 @@ const DropDownMenu = props => {
                     <li>
                         <a hre="#" onClick={logout}> logout </a>
                     </li>
+                    <li id="prof" >
+                        <Link to="/account" >My Account</Link>
+                    </li>
                 </li>
             </Fragment>
         );
@@ -66,6 +70,7 @@ const DropDownMenu = props => {
                 <li>
                     <a href="/">help and legal</a>
                 </li>
+
             </ul>
         </div>
     );
